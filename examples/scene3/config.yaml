@@ -1,0 +1,70 @@
+input:
+  qsol: 0.27      # Qsol, the half cone angle (deg) of the sun
+  psfc: 2013.25   # surface pressure (hPa)
+  galb: 0.02      # surface albedo
+  atau0: 0.2      # aerosol optical thickness at 550 nm
+  angexp: 1.0     # aerosol Angstrom exponent
+  aomg: 0.95      # aerosol single-scattering albedo
+  aasy: 0.7       # aerosol asymmetry parameter
+  the0: 70.0      # solar zenith  angle (deg) in [0,90)
+  phi0: 90.0      # solar azimuth angle (deg)
+  nu: 800         # number of pixels along the u axis
+  nv: 450         # number of pixels along the v axis
+  cphi: 10.0      # camera orientation angle, PHI   (deg)
+  cthe: 88.0      # camera orientation angle, THETA (deg) in [0,180]
+  cpsi: 270.0     # camera orientation angle, PSI   (deg)
+  caov: 179.9     # camera half Angle Of View (AOV) (deg) in [0,180]
+  cpar: 1.0       # camera Pixel Aspect Ratio (PAR)
+  chgt: 0.0       # camera relative altitude in [0,1]
+  cimax: 300.0    # max radiance (W/m2/sr) to make images (default=300)
+# min(micron), max(micron), fsol(W/m2/micron), CMF_X(/micron), CMF_Y(/micron), CMF_Z(/micron)
+waves:
+  - min: 0.375
+    max: 0.425
+    fsol: 1411.00
+    cmf:
+      x: 0.389981
+      y: 0.0117420
+      z: 1.87015
+  - min: 0.425
+    max: 0.475
+    fsol: 1901.46
+    cmf:
+      x: 2.69476
+      y: 0.423198
+      z: 14.5762
+  - min: 0.475
+    max: 0.525
+    fsol: 1920.02
+    cmf:
+      x: 0.407699
+      y: 3.53735
+      z: 3.39735
+  - min: 0.525
+    max: 0.575
+    fsol: 1853.42
+    cmf:
+      x: 4.21036
+      y: 8.87767
+      z: 0.148352
+  - min: 0.575
+    max: 0.625
+    fsol: 1767.54
+    cmf:
+      x: 9.05848
+      y: 5.87690
+      z: 0.00773629
+  - min: 0.625
+    max: 0.675
+    fsol: 1589.39
+    cmf:
+      x: 3.06711
+      y: 1.21082
+      z: 0.000150274
+  - min: 0.675
+    max: 0.725
+    fsol: 1416.72
+    cmf:
+      x: 0.171642
+      y: 0.0622390
+      z: 0.00000
